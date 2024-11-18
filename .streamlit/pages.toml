@@ -1,0 +1,24 @@
+[[pages]]
+path = "pages/home.py"
+name = "Home"
+icon = "🏠"
+url_path = "home"
+
+
+[[pages]]
+path = "pages/task.py"
+name = "Task"
+icon =  "📌"
+url_path = "task"
+
+[[pages]]
+path = "pages/dataset.py"
+name = "Dataset"
+icon =  "📊"
+url_path = "dataset"
+
+[[pages]]
+path = "pages/model.py"
+name = "Model"
+icon =  "👨🏻‍💻"
+url_path = "model"
