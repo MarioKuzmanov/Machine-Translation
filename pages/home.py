@@ -22,6 +22,7 @@ if w.strip():
             t = infer.predict((w, "a"))
         except KeyError:
             st.warning("The input has to consist only of cyrillic characters and no whitespaces.")
+
 transcription_container.markdown("### Model Transcription")
 
 transcription_container.markdown(f'<b>transcribed: {t}</b>', unsafe_allow_html=True)
