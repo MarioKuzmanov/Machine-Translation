@@ -9,6 +9,13 @@ and then type `streamlit run main.py` in the command line. Now, you can explore 
 
 ---
 
+## Results
+
+Final **WER (Word Error Rate)** score on the test dataset is **10,5**. Best result on the
+validation dataset was **22,4** achieved on the 30th epoch. The model had early stopping with 4 evaluation rounds patience. For more information about the implementation
+and the hyperparameters check out the simple webpage. 
+
+---
 ## Workflow
 
 Now, that you have what you need and successfully managed to build and run, you will be able to see this screen:
@@ -44,4 +51,11 @@ description of my approach:
 
 ![images/task.png](images/model.png)
 
-**NB:** Any comments, suggestions, improvements will be considered, so please let me know. 
+**NB:** Any comments, suggestions, improvements will be considered, so please let me know.    
+
+
+## Future directions
+- What could lead to better results is freezing the embedding layers of the source network and the target network with pretrained character embeddings. Many papers cite that, for such task initializing the embeddings with pretrained
+vectors generally leads to improved results. 
+- The **LSTM** units have a relatively complex way of memorizing the important information to allow them to perform better than regular RNN cells over long sequences.
+However, implementing attention mechanism is most definitely a better way of getting the relevant information out of the encoder hidden state, at each step of unrolling the output network - `decoder`.

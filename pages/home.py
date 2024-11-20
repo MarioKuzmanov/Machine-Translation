@@ -19,7 +19,7 @@ if w.strip():
         time.sleep(1)
         infer = Inference(path2model="bestmodel/translator.pt")
         try:
-            t = infer.predict((w, "a"))
+            t = infer.predict((w, "a"))        
         except KeyError:
             st.warning("The input has to consist only of cyrillic characters and no whitespaces.")
 
